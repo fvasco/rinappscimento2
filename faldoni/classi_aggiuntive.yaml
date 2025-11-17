@@ -1,0 +1,678 @@
+nome: Classi aggiuntive
+classi:
+- nome: Mago
+  autori:
+  - Pedro Celeste
+  descrizione: Le leggi del mondo invisibile mi sono sempre più chiare. Ed il mondo
+    reale è sempre più distante.
+  averi: una veste vistosa (di solito con delle stelle ricamate), un libro degli incantesimi,
+    una paranoia arcana.
+  bonus:
+  - tipo: "salute"
+  - tipo: "statistica"
+    statistica: carisma
+  - tipo: "oggetto"
+    nome: Veste vistosa (di solito con delle stelle ricamate)
+    ingombro: 0
+  - tipo: "oggetto"
+    nome: Libro degli incantesimi
+  avanzamenti:
+  - 'Magia: apprendi un nuovo incantesimo, come al solito. Che noia.'
+  - 'Bugia del mago: puoi dire una bugia al giorno ed essere creduto automaticamente
+    da chiunque sia di Livello inferiore al tuo.'
+  - 'Pfui: hai intravisto panorami primordiali, orribili e maestosi, nelle tue meditazioni.
+    Il mondo ordinario non ti riguarda più. Sei immune alla paura.'
+  - 'Contromagia: superando una prova di Saggezza puoi deviare sull''incantatore originale
+    qualsiasi incantesimo lanciato. È un''interruzione immediata, non conta come azione
+    di turno. Puoi farlo una volta al giorno.'
+  - 'Questo guanto è fatto di sonno: vincola un tuo incantesimo ad un oggetto. L''incantesimo
+    ora è legato per sempre a quell''oggetto, ma non più a te. Chi possiede l''oggetto
+    può lanciare l’incantesimo due volte al giorno.'
+  - 'Deja-vu: puoi lanciare nuovamente un incantesimo già lanciato, con una probabilità
+    di 3-su-6 che ti si ritorca contro.'
+  - 'Mi basta toccarlo: puoi identificare oscuri saperi e oggetti magici, semplicemente
+    toccandoli.'
+  - 'La lingua delle cose: puoi ottenere una risposta onesta da un oggetto, una volta
+    al giorno.'
+  - 'Contratto magico: chiunque accetti liberamente un tuo contratto, firmandolo,
+    subirà d6 danni per livello se lo infrange.'
+  - 'Energie sottratte: se superi il tiro Salvezza contro la magia, non solo resisti
+    con successo ad un incantesimo, ma puoi rilasciarlo in qualsiasi momento durante
+    la giornata, lanciando quell''incantesimo come se fosse tuo.'
+  - 'Sogni arcani: ogni mattina uno dei tuoi incantesimi è totalmente casuale. Tira
+    per vedere di cosa si tratta.'
+  - 'Mutazione magica: il wyrd ti ha contagiato. Tira una mutazione casuale.'
+  elenchi:
+  - nome: Magia arcana
+    descrizione: Conosci 1 incantesimo per Livello ed ognuno di essi può essere lanciato
+      una volta al giorno. Non hai bisogno di effettuare prove per lanciare un incantesimo,
+      ma il bersaglio può effettuare un tiro salvezza. Puoi apprendere nuovi incantesimi
+      dai libri di magia che trovi in gioco, studiandoli durante il tempo libero.
+      Gli incantesimi durano un numero di Turni pari al tuo Livello. Scegli i nuovi
+      incantesimi dal grimorio che preferisci, ma devono essere indipendenti dal Livello.
+      Gli incantesimi possono essere lanciati come Sigilli (vedi Magia Nera).
+  - nome: Copertina libro degli incantesimi
+    tabella: COPERTINA_LIBRO_INCANTESIMI
+    quantita_iniziale: 1
+  - nome: Speciale libro degli incantesimi
+    tabella: SPECIALE_LIBRO_INCANTESIMI
+    quantita_iniziale: 1
+  - nome: Paranoia arcana
+    tabella: PARANOIE_ARCANE
+    quantita_iniziale: 1
+  tabelle:
+    COPERTINA_LIBRO_INCANTESIMI:
+    - Pelle umana
+    - Corteccia e muschio
+    - Ferro arrugginito
+    - A specchio
+    - Velluto blu
+    - Incrostata di molluschi
+    SPECIALE_LIBRO_INCANTESIMI:
+    - Sussurra senza sosta frasi scomposte
+    - Levita, nuotandoti attorno
+    - Impermeabile e ignifugo
+    - Duro come uno scudo (CA +1)
+    - Puzza di formaggio ammuffito
+    - Scalda come una piccola stufa
+    PARANOIE_ARCANE:
+    - Qualcosa si muove nel buio
+    - Il mondo è una simulazione
+    - Non posso restare da solo
+    - Nessuno può toccare le mie cose
+    - Sono ricercato dalle forze oscure
+    - Se mento, la mia gola brucia
+    - Siamo tutti morti
+    - Un mio compagno mi tradirà (tiralo casualmente)
+    - Se alzo la voce “loro” possono sentirmi
+    - Non riuscirò a lanciare il prossimo incantesimo
+    - Non mi toccate, non voglio ammalarmi
+    - Se smetto di parlare si dimenticheranno di me
+- nome: Guardiaboschi
+  autori:
+  - Pedro Celeste
+  descrizione: Ciò che cerco è là fuori, lontano dal vociare degli uomini e dal puzzo
+    delle case
+  averi: un arco che chiami per nome, una trappola per orsi, una nostalgia
+  bonus:
+  - tipo: "salute"
+    quantita: 4
+  - tipo: "statistica"
+    statistica: destrezza
+  - tipo: "oggetto"
+    nome: Arco che chiami per nome
+    ingombro: 2
+  - tipo: "oggetto"
+    nome: Trappola per orsi
+  - tipo: "abilita"
+    nome: Raccoglitore
+    descrizione: >-
+      Hai Vantaggio per cercare cibo e acque in natura e raddoppi la quantità trovata.
+
+      Inoltre, puoi cercare materiali da trasformare in strumenti utili, al posto
+      del cibo.
+
+      Questo ti permette di ottenere un oggetto o una serie di oggetti che potrebbero
+      essere plausibilmente costruiti con materiali naturali.
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Imboscata: quando tendi un''imboscata ad un nemico ignaro, tutti i membri del
+    tuo gruppo ricevono un''azione extra (non offensiva) nel primo round.'
+  - 'Arciere implacabile: se ottieni il danno massimo, la freccia si pianta dove vuoi.
+    Negli occhi, nella mano, dove vuoi.'
+  - 'Più sono grandi e più fanno rumore quando cadono: sei abituato ad affrontare
+    enormi bestie e conosci una o due cose di anatomia. Dopo un turno passato ad osservarlo,
+    puoi infliggere danno triplo contro qualsiasi avversario più grande di un essere
+    umano. Funziona solo una volta per avversario.'
+  - 'Maestro delle bestie: nelle tue avventure incontrerai degli animali pericolosi.
+    Uno di loro sarà tuo amico, ma la bestia deve esistere nella vita reale e non
+    deve esserti ostile quando lo incontri. Se è abbastanza grande da poter essere
+    cavalcata allora puoi farlo senza problemi. Inoltre, devi dargli un nome.'
+  - 'Trapper: sei bravo a tendere trappole. Se ti trovi in un ambiente verdeggiante
+    o simile, puoi creare una trappola in 10 minuti se riesci a descriverla con almeno
+    3 dettagli al Master. Infliggerà 1d6 danni.'
+  - 'Sussurro animale: puoi calmare una bestia ostile, se non è stata ancora attaccata,
+    superando un tiro su Carisma.'
+  - 'Bussola vivente: il tuo gruppo tira con Vantaggio per stabilire se si perde mentre
+    attraversa un esagono.'
+  - 'Svanire tra gli alberi: se ti trovi in una foresta, tra le colline, in una grotta
+    o in un altro terreno naturale con degli elementi che possano ostacolare la linea
+    di vista, puoi scegliere di scomparire. Mentre sei svanito non puoi influenzare
+    il mondo in alcun modo. Puoi riapparire in qualsiasi momento scendendo da un albero,
+    spuntando dietro una roccia, ecc.'
+  - 'Non badare a me, sto solo raccogliendo delle bacche: puoi preparare una dose
+    di veleno passando un''ora nella natura selvaggia. La vittima deve superare un
+    tiro salvezza o diventare confuso per 2d4 round, subendo d6 danni per round.'
+  - 'Tiro impossibile: una volta a sessione, puoi effettuare un colpo impossibile.
+    La tua freccia può rimbalzare dietro gli angoli, tagliare una moneta a metà o
+    spaccare un capello. Colpisce automaticamente e infligge danni doppi.'
+  - 'Segugio: puoi seguire automaticamente delle tracce in natura. Se si tratta di
+    animali sai individuarne la specie. Una volta a sessione puoi trasformare un incontro
+    casuale in un Presagio, ma devi farlo prima di scoprire l’incontro.'
+  elenchi:
+  - nome: Piume d’uccello
+    descrizione: Una volta a sessione puoi usare l’abilità di Raccoglitore per creare
+      delle frecce speciali, tante quanti sono i tuoi slot liberi, i cui poteri variano
+      in base alle piume con cui sono impennate (puoi crearne a piacimento concordandole
+      col master).
+    tabella: PIUME_DUCCELLO
+  - nome: Nostalgia
+    descrizione: >-
+      Anche quando sei boschi, c’è qualcosa che ti impedisce di diventare un’eremita
+      e
+
+      ti spinge a tornare a casa.
+    tabella: NOSTALGIE
+    quantita_iniziale: 1
+  tabelle:
+    PIUME_DUCCELLO:
+    - 'Usignolo: puoi parlare attraverso la freccia nel suo punto di impatto'
+    - 'Gufo: è totalmente silenziosa e crea una campana di silenzio dove cade'
+    - 'Cormorano: si muove nell''acqua come se fosse aria'
+    - 'Piccione: colpisce automaticamente se conosci il nome del bersaglio'
+    - 'Corvo: infligge danni doppi contro i non-morti'
+    - 'Avvoltoio: +1 per colpire e ai danni se il bersaglio è sotto la metà dei suoi
+      Pf'
+    NOSTALGIE:
+    - L’odore inconfondibile dei bordelli di città
+    - Il pollo con le prugne che cucina tua madre
+    - Le risse da taverna e i postumi della sbornia
+    - Le famose corse clandestine di maiali
+    - Un bagno caldo e dei vestiti puliti
+    - Il teatro di piazza, i musicanti, i giullari
+- nome: Bambinaia
+  autori:
+  - Pedro Celeste
+  descrizione: >-
+    Quando occorreva una cosa, di solito si diceva: “Bisogna domandare a Natal’ja
+    Savišna”
+
+    ed effettivamente, dopo aver frugato un poco, essa trovava l’oggetto richiesto
+    e diceva:
+
+    “Fortuna che l’avevo riposto!”
+  averi: un cucchiaio di legno (d6 danni, +1 contro malvagi), un set da cucito, una
+    vergogna
+  bonus:
+  - tipo: "salute"
+    quantita: 3
+  - tipo: "statistica"
+    statistica: carisma
+  - tipo: "oggetto"
+    nome: Cucchiaio di legno (d6 danni, +1 contro malvagi)
+  - tipo: "oggetto"
+    nome: Set da cucito
+    ingombro: 0
+  - tipo: "abilita"
+    nome: Storie della buonanotte
+    descrizione: Quando il gruppo riposa attorno al fuoco, o dopo una bevuta in taverna,
+      puoi leggere una storia sottovoce per conciliare il sonno dei tuoi compagni.
+      Quella notte, un Pg casuale farà dei sogni bellissimi. Se al mattino li racconterà
+      al gruppo, otterrà 1d4 punti Salute temporanei che svaniscono al riposo successivo.
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta'
+  - 'Sacri avanzi: quando prepari da mangiare non si spreca mai nulla. Ad ogni pasto
+    puoi generare 1 razione di cibo con gli avanzi delle razioni consumate.'
+  - 'Nascondigli segreti: puoi conservare degli oggetti minuscoli in uno dei numerosi
+    nascondigli sul tuo corpo (nelle maniche, sotto la lingua, in un dente finto,
+    dietro un occhio di vetro, ecc.). Gli oggetti nascosti non occupano spazio e non
+    possono essere trovati, neanche dopo la tua dipartita.'
+  - 'Caramelle portafortuna: una volta al giorno, puoi tirare fuori dalla tasca una
+    vecchia caramella ricoperta di peli. Se ingerita permette di recuperare d4 punti
+    Salvezza, ma provoca una leggera nausea persistente.'
+  - 'Rifare lo zaino: tutti conoscono l’importanza di rimettere in ordine le proprie
+    cose, ma nessuno come te è in grado di organizzare e gestire l’inventario. Ogni
+    sera puoi scegliere di riorganizzare gli spazi inventario di uno zaino, secondo
+    un criterio a scelta. Questo ti permette di ammucchiare, all’interno dello stesso
+    spazio, tutti gli oggetti della stessa categoria. Ad esempio, se il criterio è
+    “colore”, tutti gli oggetti dello stesso colore occuperanno lo stesso spazio.
+    Altri criteri possono essere: materiale, iniziale del nome, precedente proprietario,
+    ecc. Non funziona con l’Inventario Quantico.'
+  - 'Punizione corporale: puoi brandire o lanciare delle armi improvvisate e infiggere
+    danno normale (1d6).'
+  - 'Tieni, un biscottino: puoi consumare una razione per migliorare di un grado un
+    tiro di reazione.'
+  - 'Va tutto bene: puoi abbracciare una creatura per interrompere un effetto di paura
+    o charme.'
+  - 'Terrore dei discoli: ogni volta che infliggi danno massimo a una creatura puoi
+    forzare un test di Morale con Svantaggio.'
+  - 'Cos''hai combinato: una volta al giorno puoi guardare male qualcuno e fare un
+    tiro su Carisma. Se hai successo, scateni una confessione dettagliata di qualsiasi
+    misfatto compiuto nell’ultima settimana, dal furto di biscotti all''omicidio.'
+  - 'Ricetta: studiando una persona per un''ora, puoi indovinare il suo piatto preferito.
+    Puoi prepararlo con un''ora di lavoro e gli ingredienti adatti. Se lo mangia,
+    diventa ben disposto nei vostri confronti e disponibile ad aiutarvi.'
+  - 'Attento a dove metti i piedi: una volta a sessione, se un compagno sta per attivare
+    una trappola, puoi sgridarlo molto forte e fermarlo appena in tempo.'
+  elenchi:
+  - nome: Inventario quantico
+    descrizione: Hai un quantitativo pari al tuo Livello di spazi inventario extra,
+      con la capacità sovrannaturale di contenere un oggetto scelto all’occorrenza,
+      a partire dalle tabelle di equipaggiamento comune. Una volta scelto, l’oggetto
+      resta ad occupare spazio nell’inventario quantico fino alla prossima sessione
+      e non può essere sottratto, venduto o ceduto. Ad ogni inizio sessione, gli Spazi
+      Quantici si svuotano. Non puoi utilizzare gli Spazi Quantici per stipare oggetti
+      diversi da quelli generati.
+  - nome: Una vergogna
+    descrizione: Nessuno è perfetto. Anche tu hai qualcosa di cui non vai affatto
+      fiera
+    tabella: VERGOGNE
+    quantita_iniziale: 1
+  tabelle:
+    VERGOGNE:
+    - Hai una sfrenata passione per la genziana ed altri amari d’erbe
+    - Non sai resistere al fascino di criminali e mascalzoni
+    - Adori i giochi di carte, soprattutto quando si gioca a soldi
+    - Hai abbandonato tuo figlio appena nato in un monastero
+    - Fumi di nascosto delle strane erbe trovate nel bosco
+    - Hai avvelenato quel traditore di tuo marito
+- nome: Uccellatore
+  autori:
+  - Gregorio Viandante
+  descrizione: Ho rubato al Re del Cielo i suoi segreti e ora comando i suoi sudditi.
+  averi: un arco, un uccello addomesticato e una maledizione della Corte del Cielo
+  bonus:
+  - tipo: "salute"
+    quantita: 3
+  - tipo: "statistica"
+    statistica: saggezza
+  - tipo: "oggetto"
+    nome: Arco
+    ingombro: 2
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Collezionista: ottieni un secondo uccello addomesticato.'
+  - 'Combattimento aereo: i tuoi uccelli infliggono +2 Danno alle creature in volo.'
+  - 'Un pasto al volo: i tuoi uccelli ti procurano selvaggina da mangiare con 5-su-6
+    nelle terre selvagge, con 3-su-6 nei centri abitati (ma se falliscono in un centro
+    abitato ruberanno qualcosa di prezioso a qualcuno di importante).'
+  - 'Falconiere crudele: hai addestrato i tuoi uccelli a puntare le aree molli del
+    bersaglio, aumenta di una taglia il loro danno (es.: uccelli che infliggono d6
+    danno ora infliggono d6 danno con Vantaggio, e così via).'
+  - 'Due (o tre) volte maledetto: ottieni una nuova Maledizione della Corte del Cielo,
+    ma anche degli artigli affilati (d6 danno, estraibili).'
+  - 'Compagni per la vita: quando subisci danno puoi decidere di farlo subire ad uno
+    dei tuoi uccelli addomesticati al posto tuo. O viceversa.'
+  - 'Il fascino della falconeria: quando sfoggi le tue doti diventi l’idolo della
+    nobiltà locale con 3-su-6. Se fallisci attiri l’ira di un altro falconiere.'
+  - 'Occhio di falco: la tua vista è innaturalmente acuta, puoi vedere i dettagli
+    a chilometri di distanza.'
+  - 'Ladyhawke: puoi trasformarti in uno dei tuoi uccelli addomesticati, mentre il
+    tuo uccello si trasforma in un essere umano (ha la sua problematica personalità
+    e i suoi obiettivi, puoi farlo controllare al master o ad un altro giocatore).'
+  - 'Piume e astragali: puoi dire che qualcosa di terribile sta per accadere o che
+    la Morte ti è alle calcagna. Prevedi il futuro e ottieni Vantaggio al prossimo
+    tiro. Con 2-su-6 i tuoi timori sono fondati.'
+  - 'Tre (o due) volte maledetto: ottieni una nuova Maledizione della Corte del Cielo,
+    ma anche un becco seghettato (2d6 danni, strappa via un occhio se il risultato
+    è un doppio).'
+  elenchi:
+  - nome: Esperto falconiere
+    descrizione: Hai un uccello addomesticato, solitamente un rapace, che esegue i
+      tuoi ordini in maniera implacabile. Puoi comunicare con lui in maniera raffazzonata.
+      Puoi usare la tua azione per fargli eseguire un tuo comando. Il tuo Uccello
+      addomesticato usa le tue statistiche, se non viene specificato altrimenti. Una
+      volta per sessione puoi invocare uno dei suoi tratti per avere Vantaggio. Se
+      uno dei tuoi uccelli muore puoi addestrarne un altro della medesima specie durante
+      il Tempo Libero, ma non puoi dedicarti ad altre Attività.
+    tabella: UCCELLI
+    quantita_iniziale: 1
+  - nome: Maledizione della Corte del Cielo
+    tabella: MALEDIZIONI_CORTE_CIELO
+    quantita_iniziale: 1
+  tabelle:
+    UCCELLI:
+    - Falco pellegrino (picchiata, caccia, d6 danno)
+    - Corvo imperiale (becco possente, intelligenza, d6 danno)
+    - Barbagianni (notturno, silenzioso, d4 danno)
+    - Grifone (grande, fetore, d6 danno con Vantaggio)
+    - Astore (veloce, vista acuta, d6 danno)
+    - Gufo (segugio, preveggenza, d6 danno)
+    MALEDIZIONI_CORTE_CIELO:
+    - Un tipo di uccelli ti odia, tira sulla tabella qua sopra per stabilire quale.
+      Non puoi addomesticare quella specie, e i suoi esemplari ti attaccheranno a
+      vista e proveranno a ucciderti.
+    - Intorno a te soffia sempre un vento implacabile.
+    - Puoi cibarti solo di ciò che ti offre il cielo.
+    - Solo la carne cruda soddisfa la tua fame.
+    - Il ricordo delle tue parole è presto portato via dal vento.
+    - Le tue ossa sono cave (-2 Forza).
+- nome: Cuoco mannaro
+  autori:
+  - Invernomuto
+  descrizione: Non avrei mai dovuto cucinare quel cinghiale dagli occhi rossi!
+  averi: un ricettario con una Pietanza Prelibata scritta, una padella in ferro dallo
+    strano fondo di colore giallo e tre Mutazioni Animali al giorno (tira tre animali).
+  bonus:
+  - tipo: "salute"
+    quantita: 3
+  - tipo: "statistica"
+    statistica: forza
+  - tipo: "oggetto"
+    nome: Ricettario
+  - tipo: "oggetto"
+    nome: Padella in ferro dallo strano fondo di colore giallo
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Fungarolo: Passando un’ora per le Terre Selvagge con un cesto di vimini e un
+    coltello trovi Ingredienti Freschi per preparare una Pietanza Prelibate.'
+  - 'Senti st’olive: i tuoi piatti sono nutrienti ma pesanti, conferiscono vantaggio
+    in tutte le prove di forza, ma 2-su-6 si è colpiti da “cecagna” e ti addormenti.'
+  - 'Sentore Animale: per una guardia successiva ad una mutazione ottieni informazioni
+    precise su quanti e quali animali sono presenti in zona.'
+  - 'Mamma mia che Fiatatella: le tue pietanze hanno un retrogusto di menta fresca,
+    se nell’ora successive fai un rutto in faccia ad un individuo hai Vantaggio su
+    Carisma nei suoi confronti.'
+  - 'Acciaino Indomito: affili coltelli e pugnali, tiri senza svantaggio per il danno
+    delle armi piccole finchè non le bagni con un liquido (vino, sangue, acqua...).'
+  - 'Reazione “Aspettata”: se un PNG mangia una Pietanza Prelibata, tira con Vantaggio
+    per la sua reazione.'
+  - 'Fiuto per il Mercato: ottieni forti sconti su tutti i prodotti alimentari e una
+    diceria certa, inoltre 2-su-6 una rotta vantaggiosa commerciale.'
+  - 'Lasagnolo della Provvidenza: hai un mattarello di un metro per produrre dell’ottima
+    pasta all’uovo (1d4+1 danno, 3-su-6 il nemico è stordito).'
+  - 'Porchetta per tutti: con qualsiasi ingrediente (anche verdure), un forno e della
+    legna secca sei in grado di preparare una porchetta e dieci pagnotte.'
+  - 'Cucina da Campo: con un’ora di tempo sei in grado di allestire una cucina con
+    tanto di forno, in qualsiasi condizione atmosferica e in qualsiasi luogo.'
+  - 'Oste porta il vino: nelle locande ti servono la miglior bevanda al prezzo più
+    basso oltre ad avere un innato fiuto nell’individuare le cantine.'
+  elenchi:
+  - nome: Pietanza Prelibata
+    descrizione: >-
+      Con il Ricettario e Ingredienti Freschi sai preparare una “Pietanza Prelibata”.
+
+      Ad ogni turno di Tempo libero, con una cucina, degli Ingredienti Freschi e una
+      pergamena su cui trascrivere le procedure, impari una nuova Pietanza Prelibata.
+    tabella: PIETANZE_PRELIBATE
+    quantita_iniziale: 1
+  - nome: Mutazione Animale
+    descrizione: >-
+      Previa consacrazione, per tre volte al giorno puoi trasformarti in un animale,
+      una per ogni taglia (grossa, media e piccola). La durata della trasformazione
+      è di una guardia, il tuo equipaggiamento e i tuoi abiti cadranno a terra oppure
+      verranno lesionati durante la mutazione. Per tornare umano prima del tempo devi
+      annusare un tuo indumento usato da almeno una settimana.
+
+      Consacrazione: devi fare un bagno in acqua di fiume abbracciando l’animale,
+      poi prendere una parte della sua muta, (peli, piume o pelle) senza ferirlo e
+      senza ferirti, bollire successivamente acqua e muta e poi bere l’estratto freddo.
+
+      Gli animali di taglia grande danno un +1d10 PS, media +1d6 PS, piccola +1d4.
+      Tutti i PS tornano al valore di base massimi alla fine della mutazione. Per
+      innescare la Mutazione devi vedere la luna piena o qualsiasi cosa che ricordi
+      un grosso disco giallo alto sopra la testa. 1-su-6 rischi di diventare animale
+      mannaro (Forza +1d6, danno 1d12). Una bestia dagli occhi rossi piena di odio
+      che attaccherà chiunque ritenga essere una minaccia. Solo l’intervento di un
+      esorcismo da parte di un monaco può portare alla normalità.
+    tabella: MUTAZIONI_ANIMALI
+  tabelle:
+    PIETANZE_PRELIBATE:
+    - 'Zuppa del Seguace: 3 cipolle, 4 funghi, 2 patate e un’unghia. I Seguaci che
+      la consumano non vogliono la loro paga giornaliera.'
+    - 'Stufato del Diavolo: un pezzo qualsiasi di mostro demoniaco cotto molto lentamente
+      allo spiedo. Cura dalle maledizioni dopo 2 giorni di sudori freddi.'
+    - 'Arrosto Morto: un Non-Morto, 10 carote, 10 teste di aglio. Mangiato caldo avrai
+      vantaggio sui danni contro i Non-Morti.'
+    - 'Patata Focosa: una patata, olio e una pergamena crei una patata incendiaria
+      (2d6 danni incendiari ad area, 3-su-6 incendi l’obbiettivo)'
+    - 'Minestra del Contadino: un contadino, 10 litri di acqua, un secchio di cenere
+      e 1 litro di vino rosso. Mangiata calda rende un riposo breve come uno lungo.'
+    - 'Crostata della Gogna: un secchio di pinoli, 10 uova, 1 sacco di farina. Servita
+      fredda convince chi la mangia che l’Autorità del Luogo stia rubando le tasse.'
+    MUTAZIONI_ANIMALI:
+    - Cinghiale (m)
+    - Lupo (m)
+    - Gatto (p)
+    - Gufo (m)
+    - Cervo (g)
+    - Orso (g)
+    - Grillo (p)
+    - Maiale (m)
+    - Corvo (p)
+    - Topo (p)
+    - Gallina (p)
+    - Cavallo (g)
+- nome: Astrologo
+  autori:
+  - The Kernel In Yellow
+  descrizione: Mi spiace dirvi, mio caro, che questo non è affatto un buon giorno
+    per combattere. L’influenza di Marte è molto debole e chi attaccasse per primo
+    perderebbe certamente. Ma ora che lo sappiamo entrambi nessuno vorrà sferrare
+    il primo colpo...
+  averi: un libro pieno di schemi astrali e orbite, un calendario dei prossimi 10
+    anni e degli abiti eleganti
+  bonus:
+  - tipo: "salute"
+    quantita: 2
+  - tipo: "statistica"
+    statistica: carisma
+  - tipo: "oggetto"
+    nome: Libro pieno di schemi astrali e orbite
+  - tipo: "oggetto"
+    nome: Calendario dei prossimi 10 anni
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Tema Natale: facendo domande inopportune a una persona per oltre 4 ore, sei in
+    grado di compilarne il Tema Natale, che dirà a te (e a lei, se glielo sveli) tutto
+    quello che c’è da sapere sull’influenza dei pianeti sulla sua vita. Conosci sempre
+    il tuo Tema Natale, ma puoi memorizzarne uno per ogni livello da Astrologo.'
+  - 'Scritto nelle stelle: quando apprendi la data di nascita di un PNG, il master
+    ti rivelerà un’informazione sul suo carattere.'
+  - 'Medicina degli astri: se conosci il Tema Natale di una persona malata, puoi tentare
+    di capire quali umori la influenzino e suggerire una terapia.'
+  - 'Una giornata propizia: puoi consumare un Pianeta per applicare il bonus/malus
+    di un’influenza a tutte le tue azioni della giornata. Tira il dado una sola volta.
+    Non puoi avere più di un’influenza alla volta attiva così.'
+  - 'La lingua dei pianeti: puoi comunicare attraverso contorte simbologie astrologiche,
+    comprensibili solo a chi le conosce. Potete parlare di qualsiasi cosa, ma ci sono
+    sempre 2-su-6 possibilità di fraintendimento. Agli altri, il vostro discorso sembrerà
+    tanto dotto e coerente quanto totalmente privo di senso.'
+  - 'Un po’ di Alchimia: mastichi anche un po’ di alchimia. Sei in grado di eseguire
+    semplici operazioni alchemiche quali l’estrazione di tinture o la miscela di pozioni
+    di cui conosci la ricetta.'
+  - 'Influenze complesse: Una volta al giorno, puoi effettuare un’analisi astrologica
+    profonda e complessa, determinando le influenze di più pianeti contemporaneamente.
+    Se lo fai, assegna due Pianeti alla volta.'
+  - 'Influenze fini: Impiegando il doppio del tempo, puoi cogliere solo i momenti
+    più propizi o negativi nella tua analisi e assegnare solo il bonus o il malus
+    di un Pianeta.'
+  - 'L’oracolo dei cieli: avendo accesso ai tuoi materiali e con un’ora di analisi
+    accurata, puoi sapere se un evento futuro si verificherà o meno. Hai ragione [Livello]-su-6
+    volte (+1 se conosci il Tema Natale di chi compirà l’azione). L’evento deve avvenire
+    tra almeno 24 ore e fino a 500 anni nel futuro.'
+  - 'L’oroscopo di Nostro Signore: hai compilato un Tema Natale accurato del Salvatore
+    in persona. Alcuni vedono questo gesto come eretico, altri come uno degli studi
+    più nobili. Occupa lo spazio di un Tema Natale e non puoi dimenticarlo, ma puoi
+    farvi riferimento una volta a settimana per trovare un momento particolarmente
+    propizio per le arti sovrannaturali. Se lo fai, aggiungi 1d6 al prossimo tiro
+    per resistere o lanciare Incantesimi o Miracoli. Inoltre, puoi considerare questo
+    Tema Natale come noto quando usi l’Oracolo dei cieli su eventi che non vengono
+    compiuti da agenti umani (catastrofi naturali, infestazioni demoniache...).'
+  - 'Ingannare gli stolti: mentre compili l’oroscopo a qualcuno, puoi effettuare una
+    prova di Carisma per persuaderlo o dissuaderlo dal compiere un’azione precisa.
+    Qualunque sia il risultato, non sarai mai abbastanza diretto perché il tuo bersaglio
+    si accorga che è stata tutta un’idea tua.'
+  elenchi:
+  - nome: Influenza dei pianeti
+    descrizione: Possiedi 1+[Livello] Pianeti (d6 di colore grigio) giornalieri. Tramite
+      qualche minuto di analisi del Tema Natale del tuo bersaglio e del momento corrente,
+      puoi assegnare un Pianeta a te o a qualcuno di cui conosci il Tema Natale (vedi
+      sopra), da aggiungere o sottrarre a un tiro che rispetti i requisiti nella prossima
+      ora. Ogni personaggio può avere una sola influenza alla volta. Puoi anche fare
+      un’analisi generale e lanciare un Pianeta, per dare a tutti un bonus/malus pari
+      al risultato per i prossimi 10 minuti, per tutti i tiri a cui si applica. Al
+      primo livello e ad ogni livello successivo impari a riconoscere un’Influenza
+      casuale.
+    tabella: INFLUENZA_DEI_PIANETI
+    quantita_iniziale: 1
+  - nome: Perché hai dovuto lasciare la corte e vivere da povero gaglioffo?
+    tabella: EVENTI_ASTROLOGO
+    quantita_iniziale: 1
+  tabelle:
+    INFLUENZA_DEI_PIANETI:
+    - 'Influenza del Sole: Somma il risultato del dado a un tiro in cui segui la tua
+      coscienza o ciò che ti rende unico. Sottrailo se invece ti comporti in modo
+      egoistico o conformista.'
+    - 'Influenza della Luna: Somma il risultato del dado a un tiro in cui fai appello
+      all’emotività o spingi verso l’azione. Sottrailo se invece fai appello alla
+      logica o inviti alla prudenza.'
+    - 'Influenza di Mercurio: Somma il risultato del dado a un tiro in cui cerchi
+      di stabilire un contatto o fai i tuoi interessi di venditore. Sottrailo se invece
+      cerchi di evitare di parlare o fai i tuoi interessi di acquirente.'
+    - 'Influenza di Marte: Somma il risultato del dado a un tiro in cui fai ricorso
+      alla violenza, anche difensiva, o fai appello a coraggio o desiderio. Sottrailo
+      se cerchi di evitare lo scontro fisico o inviti alla fuga o alla resa.'
+    - 'Influenza di Venere: Somma il risultato del dado a un tiro in cui ti metti
+      in pericolo per il tuo amore o i tuoi affetti. Sottrailo se le tue azioni puntano
+      a separare famiglie, amici o amanti.'
+    - 'Influenza di Giove: Somma il risultato del dado a un tiro in cui usi o fai
+      appello a fede o ottimismo o in cui ti rivolgi a un’autorità. Sottrailo se invece
+      punti ad ateismo e pessimismo o se parli con ribelli e criminali.'
+    - 'Influenza di Saturno: Somma il risultato del dado a un tiro in cui cerchi di
+      ottenere o usare argomenti da sapiente o se il tuo bersaglio è una persona anziana.
+      Sottrailo se cerchi di impedire l’accesso alla conoscenza o se il tuo bersaglio
+      è giovane.'
+    - 'Influenza di Urano: Somma il risultato del dado a un tiro in cui cerchi di
+      creare qualcosa di nuovo o di portare un cambiamento imprevisto nella vita di
+      qualcuno. Sottrailo se invece cerchi di resistere al cambiamento o fai uso di
+      strumenti vecchi.'
+    - 'Influenza di Nettuno: Somma il risultato del dado a un tiro per comprendere
+      le emozioni altrui o per confondere il tuo bersaglio con parole, gesti o sostanze.
+      Sottrailo se sei tu a voler resistere a confusione o dipendenze.'
+    - 'Influenza di Plutone: Somma il risultato del dado a un tiro in cui cerchi di
+      nascondere te stesso o un oggetto che porti con te o se stai occultando la verità.
+      Sottrailo ai tiri per resistere a trappole nascoste o per rivelare i segreti
+      altrui.'
+    EVENTI_ASTROLOGO:
+    - Un astrologo più abile di te ti ha scacciato.
+    - Hai previsto una disgrazia al tuo signore. Avevi ragione.
+    - Hai previsto una grande fortuna al tuo signore. Non ti sei mai sbagliato così
+      tanto in vita tua.
+    - La Chiesa ha iniziato a sospettarti di stregoneria.
+    - Sei stato beccato a fare l’”oroscopo” alla moglie del tuo signore.
+    - Hai fatto il tuo stesso oroscopo e hai visto che questo sarebbe stato il tuo
+      destino.
+- nome: Savio
+  autori:
+  - The Kernel In Yellow
+  descrizione: Non preoccupatevi, so tutto su queste creature. No, non le ho mai viste,
+    ma ho letto Aristotele e lui ne parlava
+  averi: un paio d’occhiali, un tomo voluminoso, una fama
+  bonus:
+  - tipo: "salute"
+  - tipo: "statistica"
+    statistica: saggezza
+  - tipo: "oggetto"
+    nome: Un paio d’occhiali
+    ingombro: 0
+  - tipo: "oggetto"
+    nome: Un tomo voluminoso
+    ingombro: 2
+  avanzamenti:
+  - 'Una pergamena: Aggiungi un nuovo Argomento al tuo tomo.'
+  - 'Nom de plume: Hai un secondo nome sotto cui hai pubblicato alcuni testi diversi
+    dai tuoi normali interessi. Tira una seconda fama. Puoi presentarti col nome che
+    preferisci e non conta come mentire. Puoi anche rivelare entrambi i nomi a qualcuno,
+    ma questo potrebbe metterti nei guai.'
+  - 'Molti maestri: Quando entri in una nuova città o in un monastero, tira 1d6: con
+    4+ hai studiato presso un grande saggio che ora risiede qui. Siete ancora in buoni
+    rapporti e ti aiuterà in cambio di chiacchiere interessanti. Se la città ha un''università,
+    il successo è automatico.'
+  - 'Pettegolezzi: Gli studiosi sono creature pettegole e sono letteralmente dappertutto
+    nelle corti dei potenti. Quando incontri o senti menzionare una persona importante
+    (nobile, membro delle gerarchie ecclesiastiche...) tira su Saggezza. Se hai successo,
+    il Master ti dirà un segreto scabroso su questa persona.'
+  - 'Autorità: Quando stai discutendo di argomenti dotti con qualcuno che non è d''accordo
+    con te, puoi semplicemente dire chi sei e tirare d6+Livello. Se l''Argomento è
+    nel tuo tomo, aggiungi 1. Con 5 o più, tutti quanti concorderanno che hai ragione
+    te in virtù della tua esperienza.'
+  - 'Un uomo di lettere, non di guerra: se stai combattendo contro nemici civilizzati,
+    una volta al giorno puoi semplicemente dichiarare che non sei un uomo di guerra
+    e ritirarti dal combattimento. Finché non attacchi di nuovo sarai lasciato stare,
+    ma subirai comunque le conseguenze di una sconfitta (arresto, esilio...).'
+  - 'Il sesso degli angeli: una volta al giorno, puoi fermare un qualsiasi gruppo
+    di creature che capiscano la tua lingua per 1d6+Livello minuti intavolando una
+    lunga discussione su argomenti completamente futili. La discussione non degenererà
+    in violenza, né ti fornirà informazioni utili (di informazioni inutili, invece,
+    ne otterrai a bizzeffe) e al termine della stessa le creature riprenderanno quello
+    che stavano facendo. Se attaccate, le creature abbandoneranno la discussione.
+    Se ti allontani, durerà solo 1 altro minuto.'
+  - 'Virtute e Canoscenza: pezzenti, popolani e sgherri assumeranno che tu abbia ragione
+    quando parli di qualcosa. Se dovesse saltare fuori che ti sbagliavi, hai 4-su-6
+    possibilità che si fidino ancora di te la prossima volta. Riduci di 1 per ogni
+    volta che ti sei sbagliato in loro presenza.'
+  - 'Belle lettere: le tue lettere ti permettono di effettuare prove di Carisma a
+    distanza, a patto che il tuo bersaglio sappia leggere. Quando invece leggi un
+    testo, puoi effettuare un tiro di Saggezza per capire le intenzioni di chi scrive,
+    la presenza di codici in un testo (non è detto che tu sappia interpretarli) o
+    le inconsistenze di un testo complesso.'
+  - 'Compagni di studi: Quando entri in una nuova città o in un monastero, tira 1d4:
+    il risultato è il numero di ex compagni di studi che vi si trovano. Si ricordano
+    di te e della tua fama e sono genericamente ben disposti nei tuoi confronti.'
+  - 'Conoscenza Oscura: Una volta a sessione, puoi declamare qualcosa che ritieni
+    vero perché l''hai letto in un libro. Hai 3-su-6 possibilità che sia vero (non
+    saprai se è vero immediatamente, ma verrà determinato dal Master al momento opportuno).
+    Deve esserci una motivazione plausibile perché tu possa trovare quest''informazione
+    in un libro (novità e segreti personali sono improbabili). Potresti avere ragione
+    solo parzialmente, ma non ti sbaglierai mai del tutto. Se parli di un Argomento
+    del tuo tomo, le possibilità di avere ragione diventano 4-su-6.'
+  - 'La Rete: conosci gente che conosce altra gente che conosce altra gente... Puoi
+    sfruttare questa rete per far arrivare un messaggio scritto e firmato a una persona
+    che vuoi, anche se non la conosci direttamente, in 2d6 settimane. Una risposta
+    ci impiega lo stesso tempo e, anche se ti sposti, riuscirà a ritrovarti.'
+  elenchi:
+  - nome: Il tomo
+    descrizione: Il Tomo è la tua opera omnia, ancora in lavorazione, di filosofia
+      universale. Un giorno conterrà tutto il sapere umano e ti renderà un grande
+      dotto. Nel frattempo, puoi consultarlo per sommare il tuo Livello a Saggezza
+      nelle prove che riguardano i suoi Argomenti. Inizi con 3 Argomenti (ritira i
+      doppi).
+    tabella: ARGOMENTI_TOMO
+    quantita_iniziale: 3
+  - nome: Fama
+    descrizione: >-
+      Coi tuoi studi e le tue pubblicazioni ti sei fatto una certa fama. Nobili, uomini
+
+      dotti, membri del clero e arruffapopoli la sanno associare al tuo nome.
+    tabella: FAMA
+    quantita_iniziale: 1
+  tabelle:
+    ARGOMENTI_TOMO:
+    - Teologia
+    - Geologia
+    - Geografia
+    - Araldica
+    - Storia
+    - Letteratura
+    - Legge
+    - Botanica
+    - Matematica
+    - Architettura
+    - Ingegneria
+    - Medicina
+    - Zoologia
+    - Alchimia
+    - Astrologia
+    - Pittura e scultura
+    - Metallurgia
+    - Genealogia delle famiglie nobili
+    - Diritto canonico
+    - Demonologia
+    FAMA:
+    - 'Eresiarca: i tuoi testi critici della Chiesa hanno ottenuto una certa trazione
+      tra il popolino vessato. Nobili, vescovi e sgherri cercheranno di arrestarti,
+      ma hai la simpatia del popolino e degli ordini mendicanti.'
+    - 'Alleato dei nobili: hai scritto spesso per giustificare i privilegi della nobiltà
+      sul popolo. I nobili ti adorano, gli ecclesiastici ti tollerano e, per tua fortuna,
+      ben pochi tra i pezzenti sanno leggere.'
+    - 'Uomo dell’Impero: hai sostenuto il primato dell’Impero nel tuo Paese. Sei antipatico
+      a tutti, ma piuttosto intoccabile. I messi dell’Imperatore ti adorano.'
+    - 'Causa persa: hai sostenuto la persona sbagliata in una disputa dinastica. Ora
+      che la sua testa è su una picca, sei guardato con sospetto dai vincitori, ma
+      un piccolo gruppo di ribelli che non è ancora stato spazzato via ti adora.'
+    - 'Uomo del Papa: hai sostenuto il primato della Chiesa sui governi terreni. Re,
+      nobili e imperatori ti disprezzano cordialmente, mentre la Chiesa ti supporta.'
+    - 'Conoscenza Proibita: hai parlato di cose di cui era meglio non parlare. Le
+      autorità costituite ti guardano con sospetto, ma maghi, alchimisti e stramboidi
+      vari ti rispettano come una grande autorità.'
