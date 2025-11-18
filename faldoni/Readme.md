@@ -33,8 +33,11 @@ classi:
 - nome: Iettatore              # Nome della classe
   autori:                      # Elenco degli autori del contenuto
   - Rosario Chiàrchiaro
-  descrizione: Lo iettatore... # Descrizione lunga della classe
-  averi: Un set di dadi...     # Equipaggiamento iniziale o beni posseduti
+  # Descrizione lunga della classe
+  descrizione: Lo iettatore un maestro nell'arte di far cadere i dadi in modo sfavorevole
+    per gli avversari.
+  # Equipaggiamento iniziale
+  averi: Un set di dadi truccati, un amuleto portafortuna e una fama che lo precede.
 
   # Ogni elemento in "bonus" rappresenta un beneficio che la classe possiede
   bonus:
@@ -50,20 +53,23 @@ classi:
     ingombro: 0                # Ingombro in slot: 0, 1, 2
   - tipo: "abilita"            # Aggiunge un'abilità speciale
     nome: Malocchio dei Dadi
-    descrizione: Può lanciare...
+    descrizione: Può lanciare un malocchio sui dadi degli avversari, effettua una
+      prova carisma per costringerlo a rilanciare un dado a loro scelta.
 
   # Lista degli avanzamenti ottenuti salendo di livello
   avanzamenti:
   - 'Miglioria: +1 ad una Statistica a scelta.'
-  - 'Maestro dell''Iettatura...'
-  - 'Occhio del Destino: ...'
-  - 'Fortuna Inversa...'
+  - 'Maestro dell''Iettatura: Può influenzare il risultato dei dadi una volta per
+    sessione per sessione facendo tirare con vantaggo o svantaggio.'
+  - 'Occhio del Destino: Una volta al giorno, può stabilire il risultato di un dado.'
+  - 'Fortuna Inversa: Guadagna un bonus permanente di +1 a Carisma.'
 
   # Elenchi con tabelle collegate per oggetti o scelte iniziali
   elenchi:
-  - nome: Amuleto Portafortuna  # Nome dell’oggetto
-    descrizione: Un amuleto che... # Descrizione
-    tabella: AMULETI             # Tabella da cui viene estratto
+  - nome: Amuleto Portafortuna
+    descrizione: Un amuleto che si dice porti fortuna a chi lo possiede. Effettua
+      una prova di Carisma per convincere qualcuno della sua efficacia.
+    tabella: AMULETI
     quantita_iniziale: 1
 
   # Tabelle collegate solo a questa classe
@@ -75,6 +81,21 @@ classi:
     - Collana del Quadrifoglio
     - Anello del Serpente
 
+  # Dadi che può accumulare durante il gioco
+  dadi:
+  - nome: Dadi Truccati
+    descrizione: Hai un dado per livello che puoi aggiungere o sottrarre ad un dado
+      qualsiasi lanciato da un avversario.
+    facce: 6
+    quantita_iniziale: 1
+  - nome: Iella
+    descrizione: Puoi stabilire un evento sfortunato che colpirà un avversario. Puoi
+      portare iella una volta per livello per ogni sessione di gioco. La iella non
+      può uccidere e non può essere evitata con tiri salvezza.
+    # Un dado ad una faccia è un contatore
+    facce: 1
+    quantita_iniziale: 1
+
 # Tabelle generali del faldone, disponibili per tutte le classi al suo interno
 # Le tabelle comuni sono: FALLIMENTI, NOMI, MIRACOLI, MOTIVAZIONI_PER_CAMPARE, PAROLE_OCCULTE_AZIONI, PAROLE_OCCULTE_OGGETTI
 tabelle:
@@ -82,4 +103,5 @@ tabelle:
   - Tizio
   - Caio
   - Sempronio
+
 ```

@@ -1,6 +1,5 @@
 nome: Classi aggiuntive
 licenza: Creative Commons, Attribuzione 4.0 Internazionale
-
 classi:
 - nome: Mago
   autori:
@@ -500,12 +499,12 @@ classi:
     descrizione: Possiedi 1+[Livello] Pianeti (d6 di colore grigio) giornalieri. Tramite
       qualche minuto di analisi del Tema Natale del tuo bersaglio e del momento corrente,
       puoi assegnare un Pianeta a te o a qualcuno di cui conosci il Tema Natale (vedi
-      sopra), da aggiungere o sottrarre a un tiro che rispetti i requisiti nella prossima
-      ora. Ogni personaggio può avere una sola influenza alla volta. Puoi anche fare
-      un’analisi generale e lanciare un Pianeta, per dare a tutti un bonus/malus pari
-      al risultato per i prossimi 10 minuti, per tutti i tiri a cui si applica. Al
-      primo livello e ad ogni livello successivo impari a riconoscere un’Influenza
-      casuale.
+      gli avanzamenti), da aggiungere o sottrarre a un tiro che rispetti i requisiti
+      nella prossima ora. Ogni personaggio può avere una sola influenza alla volta.
+      Puoi anche fare un’analisi generale e lanciare un Pianeta, per dare a tutti
+      un bonus/malus pari al risultato per i prossimi 10 minuti, per tutti i tiri
+      a cui si applica. Al primo livello e ad ogni livello successivo impari a riconoscere
+      un’Influenza casuale.
     tabella: INFLUENZA_DEI_PIANETI
     quantita_iniziale: 1
   - nome: Perché hai dovuto lasciare la corte e vivere da povero gaglioffo?
