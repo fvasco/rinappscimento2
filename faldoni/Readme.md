@@ -105,3 +105,13 @@ tabelle:
   - Sempronio
 
 ```
+
+---
+
+## Dove trovo i faldoni dell'app
+
+I faldoni inclusi nell'app sono disponibili qui: https://github.com/fvasco/rinappscimento2/tree/gh-pages/faldoni
+
+Potete chiedere una rettifica o utilizzarli per tutti gli usi consentiti dalla licenza.
+
+Potete anche proporre un nuovo faldone con le vostre classi, motivazioni per campare o altri nomi di merda (magari provatelo prima).

@@ -1,0 +1,1024 @@
+nome: Rinascimento 2e
+licenza: Creative Commons, Attribuzione 4.0 Internazionale
+classi:
+- nome: Rampollo
+  autori:
+  - Pedro Celeste
+  descrizione: Non preoccupatevi, mio padre non ci lascerà marcire in una cella. Ho
+    solo bisogno di fare due chiacchiere col Signore di questo posto.
+  averi: una grossa rendita, delle mani delicate e un brutto vizio
+  bonus:
+  - tipo: "salute"
+  - tipo: "oggetto"
+    nome: 200 fiorini
+    ingombro: 2
+  - tipo: "oggetto"
+    nome: 100 fiorini
+  - tipo: "abilita"
+    nome: Rendita di famiglia
+    descrizione: Puoi richiederne fino a 10.000 fiorini (in rate da 1.000) presso
+      qualsiasi banca rispettabile, prima che la tua famiglia decida di diseredarti.
+      Non puoi spenderli per te stesso, tranne che per acquistare beni di lusso o
+      per affittare alloggi di un certo livello. Tutta la rendita deve essere investita
+      per le imprese e il profitto della tua compagnia di gaglioffi. Non guadagni
+      Px in questo modo.
+  - tipo: "abilita"
+    nome: Un brutto vizio
+    descrizione: >-
+      Ad ogni turno di Tempo libero spendi 100 fiorini e attiri l’attenzione della
+      legge con 1-su-6
+
+
+      1. Vampirismo
+
+      2. Dipendenza da mandragora
+
+      3. Orge memorabili
+
+      4. Sedute spiritiche
+
+      5. Combattimenti tra maiali
+
+      6. Mostre clandestine di reliquie
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Scudi umani: puoi usare un funzionario per evitare un attacco. Quando lo fai
+    il funzionario muore in maniera orribile a prescindere dal danno.'
+  - 'Sorriso vincente: se non ha ancora avuto luogo uno spargimento di sangue, ottieni
+    vantaggio a tutti i tiri di reazione fintanto che sei tu a parlare.'
+  - 'Conosco un tipo: in qualsiasi insediamento hai 3-su-6 di conoscere qualcuno degno
+    di fiducia, poco rispettabile e completamente al verde: nobili esiliati, eretici,
+    spose in fuga, ecc. Puoi convincerli ad aiutarti per il giusto compenso.'
+  - 'Blasone: una volta a sessione puoi usare il nome della tua famiglia per tirarti
+    fuori dai guai. Funziona in 4-su-6. In caso di fallimento ti si ritorce contro:
+    un debito, un’antica offesa, una brutta storia di corna...'
+  - 'Renato, la pistola!: una volta a sessione, puoi chiedere ad un tuo funzionario
+    di passarti un oggetto comune che non è nel tuo inventario. Può essere un’arma,
+    un arnese da lavoro, un libro di ricette, un barattolo di more, ecc. Resta nell’inventario
+    per un giorno, poi finisci per perderlo, come al solito.'
+  - 'Eleganza a corte: indossi costosi abiti alla moda, come fossero un’armatura.
+    Costano come un’armatura e forniscono la stessa protezione, ma occupano un solo
+    Spazio. -1 CA quando si sporcano, si bagnano o si logorano.'
+  - 'Il maniero della zia: hai ereditato un antico palazzo in rovina appena fuori
+    città. Vale 10.000 Fiorini, ma erediti anche un debito dello stesso valore e 1d4
+    figli bastardi di tuo padre che ci vivono ancora dentro e complottano per ucciderti.
+    Disfartene ti farebbe perdere il blasone e la rendita di famiglia.'
+  - 'Vanteria: puoi raccontare in pubblico le tue avventure appena concluse. Ogni
+    Pg che partecipa ottiene +10% Px. Puoi farlo alla fine di ogni avventura.'
+  - 'Duello: puoi sfidare un Png ed egli non può rifiutare. Un attimo prima della
+    resa dei conti puoi fingere un malanno e farti sostituire da un funzionario.'
+  - 'Parenti serpenti: una lunga tradizione familiare ti ha lasciato in eredità una
+    curiosa immunità ad ogni forma di veleno.'
+  - 'Lignaggio: quando muori puoi lasciare tutto in eredità ad un parente lontano
+    e promuoverlo a nuovo Pg, con lo stesso livello e Px e gli stessi avanzamenti.'
+  elenchi:
+  - nome: Funzionari
+    descrizione: Seguaci speciali che non richiedono pagamenti e agiscono secondo
+      il tuo volere. Ne comandi 1+Livello, hanno Ps pari al tuo Livello e ti seguono
+      ovunque, anche quando sarebbe sconveniente. Se gli viene chiesto di fare qualcosa
+      al di fuori della propria mansione, si verifica un fallimento catastrofico con
+      5-su-6. Se muoiono vengono sostituiti quando sali di livello, se hai modo di
+      reclutarli.
+    tabella: FUNZIONARI
+    quantita_iniziale: 2
+  tabelle:
+    FUNZIONARI:
+    - traduttore
+    - chef
+    - medico
+    - avvocato
+    - guardia
+    - guida
+    - alchimista
+    - prete
+    - parente
+    - duellante
+    - spia
+    - damerino
+- nome: Strega
+  autori:
+  - Pedro Celeste
+  descrizione: In girum imus nocte et consumimur igni.
+  averi: una scopa di betulla, un famiglio e un cappello a punta.
+  bonus:
+  - tipo: "salute"
+    quantita: 2
+  - tipo: "statistica"
+    statistica: carisma
+  - tipo: "oggetto"
+    nome: Scopa di betulla
+    ingombro: 2
+  - tipo: "oggetto"
+    nome: Cappello a punta
+    ingombro: 0
+  - tipo: "abilita"
+    nome: Stregoneria
+    descrizione: >-
+      Conosci due Parole Occulte e ogni volta che avanzi di Livello ne apprendi una
+      nuova.
+
+      Per lanciare una Stregoneria pronuncia due o più Parole Occulte che hai appreso
+      nel sabba.
+
+      Il numero massimo di Parole che puoi apprendere equivale al tuo punteggio di
+      Carisma. Combinando parole diverse puoi generare effetti diversi, concordandoli
+      con il master. Di norma, gli effetti delle stregonerie durano dieci minuti o
+      finché non ne lanci un’altra e le stregonerie offensive infliggono d6 danni
+      per Livello.
+
+      La magia nera colpisce sempre un bersaglio singolo.
+
+      Quando lanci una stregoneria devi superare un tiro su Carisma, ma se gli effetti
+      influenzano un nemico sarà lui a dover superare un tiro Salvezza per evitarli.
+
+      Di notte la Magia Nera è più potente: tira con Vantaggio per stabilire il successo
+      del lancio, oppure il nemico in questo caso tira con Svantaggio.
+  - tipo: "abilita"
+    nome: Sigilli
+    descrizione: >-
+      Puoi manifestare una stregoneria in forma di Sigillo. I sigilli sono visibili
+      a tutti e sono chiaramente arcani, ma possono essere interpretati solo da altre
+      streghe.
+
+      Puoi tenere attivo un solo sigillo alla volta. Inscrivere o interpretare un
+      sigillo richiede alla strega dieci minuti di tempo.
+
+      La creazione di un nuovo sigillo fa  svanire tutti i precedenti sigilli creati
+      dalla strega.
+
+      Un sigillo consente alla strega di creare una forma limitata di effetti persistenti
+      che possono avere conseguenze sociali all'interno del mondo di gioco, tramutando
+      una stregoneria in una trappola magica che si attiva a una data condizione.
+      (Es.: quando viene aperta una porta su cui è inscritto un sigillo).
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Le tre età: ogni giorno puoi scegliere quale aspetto assumere. Puoi apparire
+    come una fanciulla efebica, una madre fiorente o una vecchia decrepita.'
+  - 'Comunione: una volta a settimana, di notte, puoi recarti in un luogo isolato
+    come una collina o un boschetto, e iniziare a danzare con altre 2d6 streghe. Nella
+    danza dimentichi una parola occulta e ne apprendi un’altra casuale. Al risveglio
+    stringi tra le mani un oggetto casuale. Qual è il suo significato?'
+  - 'Forma selvatica: puoi diventare un animale ponendo la mano sui suoi occhi per
+    alcuni istanti. Acquisisci i suoi attributi fisici, ma diventi incapace di usare
+    oggetti o stregonerie. Al contatto col ferro torni immediatamente umana.'
+  - 'Morte apparente: sei capace di morire e risorgere a comando. Durante questo stato
+    hai l’aspetto di una donna morta per il freddo.'
+  - 'Mani sporche: puoi leggere il palmo di un uomo per scoprire se ha ucciso qualcuno
+    nelle ultime 24 ore.'
+  - 'Scopa di betulla: una volta a notte puoi denudarti e volare su una scopa di betulla.
+    Non è molto stabile, in fondo è pur sempre una scopa.'
+  - 'Lingue morte: se chiusa in una bara e sotto due metri di terra, puoi parlare
+    coi morti nelle vicinanze. Parlano tutti assieme, sono molto loquaci e spesso
+    ostili.'
+  - 'Bacio di strega: puoi ingoiare una cosa qualsiasi e farla vomitare ad un altro.'
+  - 'Decapitata: dalle tue sorelle morte per mano del boia hai appreso la capacità
+    di staccare la testa dal collo. Puoi portarla sottobraccio, farla rotolare da
+    una collina o lanciarla di notte in una finestra aperta.'
+  - 'Sottomissione: se dormi con un uomo puoi farne il tuo schiavo fino alla notte
+    successiva. In questo stato assume la forma di un animale a tua scelta.'
+  - 'Ladra di nomi: puoi rubare il nome di una vittima alla volta. Se lo trascrivi
+    su una pergamena e lo ingoi nessuno si ricorderà della sua esistenza. Quando rubi
+    un nuovo nome, il mondo recupera la memoria della vittima precedente.'
+  elenchi:
+  - nome: Parole Occulte (Azioni)
+    tabella: PAROLE_OCCULTE_AZIONI
+    quantita_iniziale: 1
+  - nome: Parole Occulte (Oggetti)
+    tabella: PAROLE_OCCULTE_OGGETTI
+    quantita_iniziale: 1
+  - nome: Famiglio
+    descrizione: Puoi vedere attraverso i suoi occhi, sentire attraverso le sue orecchie
+      e parlare attraverso la sua bocca. Se muore perdi tutti i tuoi poteri, ma rinascerà
+      dal tuo grembo in 1d6 notti. Per il resto è un animale come gli altri, ma particolarmente
+      inquietante. Dagli un nome altisonante, tipo Ghiotto Malarranca.
+    tabella: FAMIGLIO
+    quantita_iniziale: 1
+  - nome: Un prezzo da pagare
+    tabella: PREZZO_DA_PAGARE
+    quantita_iniziale: 1
+  tabelle:
+    FAMIGLIO:
+    - Gatto
+    - Serpe
+    - Corvo
+    - Rospo
+    - Topo
+    - Civetta
+    PREZZO_DA_PAGARE:
+    - Non puoi attraversare l’acqua corrente o i luoghi consacrati
+    - Puoi dormire solo impiccata ad un albero, illuminata dalla luna
+    - Ogni volta che pronunci una menzogna vomiti un po’ di sangue
+    - Puoi varcare una soglia solo se non ti vede nessuno
+    - Di giorno hai l’aspetto e l’odore di un caprone nero
+    - I bambini ti odiano e cercheranno di ucciderti
+  dadi:
+  - nome: Stregonerie disponibili
+    descrizione: Il numero massimo di stregonerie che puoi lanciare ogni giorno equivale
+      al tuo Livello+1.
+    facce: 1
+    quantita_iniziale: 2
+- nome: Monaco
+  autori:
+  - Pedro Celeste
+  descrizione: 'Devo prendere queste galline nel nome di Dio. Ma non piangere. Ricorda
+    la parola di San Polmone da Vasto: “beati coloro che non hanno più nulla da perdere”.'
+  averi: un bastone d’ulivo, un saio e tre nodi sul cordone.
+  bonus:
+  - tipo: "salute"
+    quantita: 3
+  - tipo: "statistica"
+    statistica: saggezza
+  - tipo: "oggetto"
+    nome: un bastone d’ulivo (1d6, +1 contro il male)
+  - tipo: "oggetto"
+    nome: Saio
+    ingombro: 0
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Bibliotecario: una volta a sessione, puoi dire che qualcosa è vero perché l''hai
+    letto in un libro. Tira solo quando serve (3-su-6) per scoprire se hai ragione.'
+  - 'Epifania: sei in grado di identificare il potere di una reliquia o di qualsiasi
+    altro oggetto magico portandolo in un luogo consacrato.'
+  - 'Predicatore: quando arrivi in città, i tuoi sermoni attirano i popolani. Puoi
+    guidare un numero di credenti pari al tuo livello per una settimana, come fossero
+    seguaci. Non chiedono denaro, ma devi trovare un modo per sfamarli.'
+  - 'Crociata: puoi provocare una rivolta di contadini e disperati, trascorrendo 1d6
+    giorni nei bassifondi o nelle campagne. Il Signore locale riuscirà a risalire
+    a te con 3-su-6. Preparati a scappare nella foresta.'
+  - 'Funerale: se avete recuperato il cadavere di un Pg morto da meno di una settimana,
+    puoi celebrare un commovente funerale. Tutti i partecipanti ricevono Px pari ai
+    Fiorini donati per le esequie.'
+  - 'Anatema: una volta al giorno puoi scacciare 1d6 non-morti di livello pari o inferiore
+    al tuo.'
+  - 'Voci nella testa: una volta a sessione puoi fargli una domanda. Poi tira 1d6,
+    con 5+ risponderà dicendo la verità, altrimenti la risposta sarà confusa e ti
+    fornirà più dubbi che altro.'
+  - 'Angelo custode: se un Pg subisce danno, puoi scegliere di subirlo al posto suo.'
+  - 'Camminare sulle acque: puoi camminare su qualsiasi specchio d’acqua, ma soltanto
+    se ci sono dei testimoni.'
+  - 'Parlare con gli uccelli: puoi comunicare con ogni specie di volatile. Non è per
+    niente facile. Immagina di parlare con un bimbo sovraeccitato di tre anni.'
+  - 'Stigmate: porti sul tuo corpo, in maniera inequivocabile, i segni della santità.
+    Questo attirerà su di te la venerazione dei fedeli, l’invidia della chiesa e l’odio
+    dei miscredenti.'
+  elenchi:
+  - nome: Miracoli
+    descrizione: Sei in grado di praticare Miracoli. Ne conosci uno per Livello. Tira
+      sul Libro dei miracoli per stabilire quali. Ulteriori dettagli nel capitolo
+      corrispondente.
+    tabella: MIRACOLI
+    quantita_iniziale: 1
+  - nome: Tre nodi sul cordone
+    descrizione: Tira 3 divieti del tuo ordine. Infrangere un divieto annulla i tuoi
+      poteri per una settimana. Poi il Signore ti invierà una missione da compiere
+      per poterti redimere.
+    tabella: NODI_CORDONE
+    quantita_iniziale: 3
+  tabelle:
+    NODI_CORDONE:
+    - Non usare violenza in alcun modo
+    - Non mangiare davanti ad altri
+    - Non parlare con persone del sesso opposto
+    - Non toccare il denaro
+    - Non parlare di notte
+    - Non lavarti
+    - Non tagliare barba e capelli
+    - Non camminare su ponti, strade e sentieri
+    - Non portare pesi oltre il bastone, il saio e la corda
+    - Non frequentare locande e altri luoghi di divertimento
+    - Non mentire in nessuna circostanza
+    - Non toccare la neve o il ferro
+    - Non dire mai di no
+    - Non entrare nei cimiteri
+    - Non usare carri, cavalli o imbarcazioni
+    - Non indossare armature
+    - Non restare mai da solo
+    - Non uscire se piove
+    - Non restare mai al buio
+    - Non passare davanti agli specchi
+  dadi:
+  - nome: Dadi Fede
+    descrizione: >-
+      Il numero di DF che generi ogni mattina con la preghiera equivale al tuo Livello+1.
+
+      Il numero  massimo di DF che puoi possedere è pari al tuo punteggio di Saggezza.
+    facce: 1
+    quantita_iniziale: 2
+- nome: Disgraziato
+  autori:
+  - Pedro Celeste
+  descrizione: Ma cosa ho fatto di male per meritarmi tutto questo?
+  averi: un cappello per l’elemosina, un cane triste e una grossa disgrazia.
+  bonus:
+  - tipo: "salute"
+    quantita: 4
+  - tipo: "salvezza"
+  - tipo: "oggetto"
+    nome: Un cappello per l’elemosina
+    ingombro: 0
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Bersaglio: puoi attirare gli attacchi su di te insultando i nemici che sono in
+    grado di comprenderli.'
+  - 'Mendicante: una volta al giorno puoi indurre compassione o meraviglia nei passanti
+    e guadagnare 1d6 fiorini per Livello.'
+  - 'Leggerezza: se non indossi armature o altre protezioni, ogni Spazio inventario
+    vuoto ti fornisce + 1⁄2 CA.'
+  - 'Trucchetti: sembrano magia agli occhi di molti, ma non lo sono affatto. Es.:
+    piccole sparizioni, trucchi con le carte, topi danzanti, ecc.'
+  - 'Fuga: una volta al giorno puoi fuggire automaticamente da una situazione che
+    ti trattiene. Es.: manette, gabbie e situazioni sociali imbarazzanti.'
+  - 'Abbindolare: puoi convincere stolti e ignoranti a fare ciò che chiedi se non
+    superano un tiro salvezza e se questo non li mette in pericolo.'
+  - 'Orecchie ovunque: ogni volta che arrivi in un centro abitato ottieni automaticamente
+    una diceria affidabile su quel luogo.'
+  - 'La lingua degli ultimi: conosci la lingua franca della disperazione. Ti permette
+    di comunicare con i topi, la ruggine, le ortiche e altre cose dimenticate.'
+  - 'Tasche profonde: una volta al giorno puoi estrarre qualcosa di poco valore dalle
+    tue tasche, come se fosse sempre stato lì.'
+  - 'Contagioso: puoi contagiare al tocco un’altra persona con qualche lieve malanno
+    passeggero. Es.: febbre, dissenteria, emicrania, orticaria, ecc.'
+  - 'Scacchi con la morte: una volta nella vita puoi fuggire letteralmente alla morte.
+    Descrivi come.'
+  elenchi:
+  - nome: Canti dei Diavoli Blu
+    tabella: CANTI_DIAVOLI_BLU
+    quantita_iniziale: 1
+  - nome: Cos’ha di speciale il tuo cane
+    tabella: ABILITA_CANE
+    quantita_iniziale: 1
+  - nome: La tua disgrazia (non l’unica, ma la più importante)
+    tabella: DISGRAZIE
+    quantita_iniziale: 1
+  tabelle:
+    CANTI_DIAVOLI_BLU:
+    - 'Tristi ricordi: canta di quella volta in cui qualcuno di voi fallì miseramente
+      nel fare qualcosa. Effetto: successo automatico nel ripetere quell’azione.'
+    - 'Lo strazio: il tuo canto sovrasta ogni rumore. Effetto: discorsi, miracoli
+      o stregonerie diventano impossibili.'
+    - 'Notti magiche: racconti di sbornie memorabili. Effetto: chi non supera un tiro
+      salvezza diventa immediatamente ubriaco e: 1. dorme, 2. vomita, 3. piange, 4-6.
+      aggredisce un bersaglio casuale a mani nude.'
+    - 'Canto pietoso: non riesci a trattenere le lacrime mentre canti. Effetto: bisogna
+      superare un tiro salvezza per attaccare.'
+    - 'Parole d’amore: descrivi le bellezze e i pregi di una creatura ideale. Effetto:
+      chi non supera un tiro salvezza inizia a fluttuare privo di gravità.'
+    - 'Ritmo: un canto gioioso e irresistibile. Effetto: chi non supera un tiro salvezza
+      è costretto a danzare battendo le mani a tempo.'
+    ABILITA_CANE:
+    - Sa parlare, ma più che altro bestemmia e insulta i passanti
+    - Era un umano fino a poco tempo fa
+    - È il tuo padrone
+    - Il suo morso cura la peste
+    - Addestrato nella caccia al clero
+    - È un lupo addomesticato, più o meno
+    DISGRAZIE:
+    - Devi 1000 fiorini ad un vescovo
+    - Taglia sulla testa (300 fiorini)
+    - Sei tacciato di eresia
+    - Tua madre ti ha maledetto (vedi tabella)
+    - Mani bucate (svuota l’inventario ogni giorno)
+    - Hai venduto l’anima al diavolo
+  dadi:
+  - nome: Diavoli blu
+    descrizione: >-
+      Possiedi 1+[Livello] Diavoli Blu (d6 di colore blu) giornalieri. Tramite una
+      cantilena lamentosa puoi assegnare ad un compagno un Diavolo Blu, da aggiungere
+      ad un tiro qualsiasi. Puoi anche lanciare un Diavolo Blu per tramutarlo in un
+      canto che influenza chiunque sia a portata di voce per un numero di turni pari
+      al risultato.
+
+      Al primo livello e ad ogni livello successivo apprendi un canto casuale.
+    quantita_iniziale: 2
+- nome: Malandrino
+  autori:
+  - Pedro Celeste
+  descrizione: Giuro che non volevo rubare l’anello del vescovo, era solo un trucco
+    di magia e sono sicuro di riuscire a farlo riapparire, se solo avessi... Quel
+    pugnale vi serve?
+  averi: un rasoio affilato, un libro nero e un precedente penale.
+  bonus:
+  - tipo: "salute"
+    quantita: 5
+  - tipo: "statistica"
+    statistica: destrezza
+  - tipo: "oggetto"
+    nome: Rasoio affilato
+    ingombro: 0
+  - tipo: "oggetto"
+    nome: Libro nero
+    ingombro: 0
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Mercato nero: se hai bisogno di qualcosa sai sempre dove e come trovarla.'
+  - 'Signore dei vicoli: puoi far perdere le tue tracce infilandoti in un vicolo.'
+  - 'Bassifondi: puoi trascorrere una notte intera nei bassifondi di una città per
+    apprendere d6 dicerie sul luogo. Puoi farlo una sola volta per città.'
+  - 'Giocare col destino: una volta al giorno puoi cambiare il risultato di un tiro.'
+  - 'Occhio di vetro: puoi cavarti un occhio e farlo rotolare sotto una porta o dietro
+    un angolo per dare un’occhiata. Fa schifo, ma è molto utile.'
+  - 'Contorsionista: puoi dislocare le ossa per infilarti in buchi grandi quanto la
+    tua testa.'
+  - 'Stomaco di ferro: puoi ingoiare piccoli oggetti per nasconderli e poi rigurgitarli
+    all’occorrenza.'
+  - 'Gli abiti fanno il monaco: sei in grado di travestirti e passare inosservato
+    in qualsiasi contesto. Sai anche simulare modi e linguaggi di qualsiasi classe
+    sociale. Saresti capace di ingannare anche tua madre.'
+  - 'Tocco leggero: puoi sottrarre un oggetto casuale all’inventario di qualcuno semplicemente
+    sfiorandolo. Il bersaglio deve essere ignaro e fuori pericolo.'
+  - 'Intercettazione: quando ascolti una conversazione privata le persone tendono
+    a parlare di fatti per te rilevanti.'
+  - 'Dinamitardo: con due ore di lavoro e un po’ di sterco, vetriolo e argilla, puoi
+    creare un candelotto in grado di esplodere e uccidere un uomo o di creare un buco
+    grande quanto l’organo di una chiesa.'
+  elenchi:
+  - nome: Il libro nero
+    tabella: LIBRO_NERO
+    quantita_iniziale: 1
+  - nome: Il precedente penale (e la pena prevista)
+    tabella: PRECEDENTI_PENALI
+    quantita_iniziale: 1
+  tabelle:
+    LIBRO_NERO:
+    - “Alle signore principesse di Ferrara”, un poema vagamente erotico
+    - Una preziosissima bibbia miniata sottratta ad un monastero
+    - Il diario della tua vita, redatto minuziosamente ogni sera
+    - Il “Cortegiano”, un manuale di galateo pieno di appunti ai margini
+    - “Meravigliosa visione”, un testo alchemico di un frate riminese
+    - Un libello sulle rivolte contadine intitolato “Omnia sunt communia”
+    PRECEDENTI_PENALI:
+    - Omicidio (annegamento in un sacco)
+    - Furto (amputazione della mano destra)
+    - Blasfemia (gogna e frusta)
+    - Sodomia (amputazione del naso)
+    - Cospirazione (lingua strappata con le tenaglie)
+    - Adulterio (morte sul rogo)
+  dadi:
+  - nome: Una lama nel buio
+    descrizione: >-
+      Possiedi un numero di Dadi Neri (d6 di colore nero) pari al tuo Livello da Malandrino.
+      Quando attacchi un nemico ignaro della tua presenza puoi consumare un qualsiasi
+      numero di dadi neri e sommare il risultato al danno.
+
+      Se lo desideri, puoi consumare un dado nero per infliggere un malus situazionale
+      pari al tiro ad un nemico, dopo aver trascorso un turno intero a studiarne modi
+      e movenze. Descrivi cosa fai per metterlo in difficoltà. Il malus può essere
+      inflitto anche alle prove sociali.
+
+      I dadi neri consumati vengono recuperati al mattino seguente.
+    quantita_iniziale: 1
+- nome: Venturiero
+  autori:
+  - Pedro Celeste
+  descrizione: >-
+    Sono un mercenario, uno smobilitato, un disertore dell'esercito del mio signore.
+
+    Sono stato addestrato a combattere e non conosco pace.
+  averi: uno scudo con lo stemma della tua ex compagnia di ventura, una lettera d’amore
+    e un ricordo di guerra.
+  bonus:
+  - tipo: "salute"
+    quantita: 6
+  - tipo: "statistica"
+    statistica: forza
+  - tipo: "oggetto"
+    nome: Scudo con lo stemma della tua ex compagnia di ventura
+  - tipo: "oggetto"
+    nome: Lettera d’amore
+    ingombro: 0
+  - tipo: "abilita"
+    nome: Ricordi di guerra
+    descrizione: >-
+      Quando incontri altri soldati, tira 1d6: 4+ sa qualcosa su di te
+
+
+      1. Quando hai ucciso il tuo comandante e sei fuggito
+
+      2. Quando hai stretto tra le braccia un nemico morente
+
+      3. Quando hai guidato un’intera armata verso la morte
+
+      4. Quando sei stato fatto prigioniero dall’esercito del Papa
+
+      5. Quando hai salvato la vita ad un signore che ti deve ancora un favore
+
+      6. Quando sei tornato dalla morte
+  avanzamenti:
+  - 'Miglioria: +1 ad una Statistica a scelta.'
+  - 'Stagionato: +[Livello] per colpire.'
+  - 'Attacco extra: attacchi 2 volte.'
+  - 'Occhi di ghiaccio: immune alla paura.'
+  - 'Adrenalina: al termine di un combattimento, ottieni PF temporanei pari ai danni
+    subiti. Durano fino all’inizio del prossimo combattimento.'
+  - 'Nessun dolore: non puoi morire fin quando non termina il combattimento.'
+  - 'Al comando: una volta a combattimento puoi concedere un’azione extra non offensiva
+    ad un altro Pg.'
+  - 'Enorme: vantaggio alle prove per intimidire qualcuno.'
+  - 'Scagnozzo: è rimasto impressionato da te e ti segue ovunque. Un servo, un mulo,
+    un cane fedele. Non costa nulla e non può morire (ma, non abusarne).'
+  - 'Fermi, sciocchi: una volta a sessione puoi trasformare un incontro casuale in
+    un segno di quell’incontro.'
+  - 'Una voce in taverna: hai scoperto dove si trova quella cosa che volevi tanto,
+    l’alabarda del sangue rappreso, il cuore del verme cremisi, il tuo amore perduto.
+    Il master posizionerà l’oggetto del tuo desiderio sulla mappa. Hai quattro sessioni
+    per trovarlo, altrimenti quando arriverai non sarà più lì.'
+  - 'Abracadabra: qualcuno è riuscito ad insegnarti due parole occulte. Tira sulla
+    tabella corrispondente. Puoi lanciare quella stregoneria una volta al giorno,
+    ma rischi 3-su-6 di provocare una catastrofe.'
+  elenchi:
+  - nome: Tattiche in combattimento
+    descrizione: Le tattiche sono azioni che puoi selezionare prima di un attacco.
+      Ne conosci 2 e ne apprendi un’altra ad ogni nuovo Livello. Se hai già tirato
+      un risultato, ripeti il tiro.
+    tabella: TATTICHE_COMBATTIMENTO
+    quantita_iniziale: 2
+  - nome: Lettera d’amore
+    descrizione: Non puoi ignorarla per sempre.
+    tabella: LETTERA
+  tabelle:
+    TATTICHE_COMBATTIMENTO:
+    - 'Sbilanciare: se colpisci, il nemico deve superare un TS o cadere prono.'
+    - 'Fendente: attacchi con Svantaggio, infliggi danno a 3 nemici a portata.'
+    - 'Disarmare: se colpisci, l’arma del nemico cade a terra.'
+    - 'Finta: un nemico deve superare un TS, oppure lo colpisci automaticamente.'
+    - 'Carica: attacchi con Svantaggio, ma raddoppi i danni.'
+    - 'Scudata: se colpisci stordisci un nemico per un turno.'
+    - 'Insultare: un nemico che non supera il TS tenterà in ogni modo di ucciderti.'
+    - 'Tenere la linea: affianca un compagno, il quale ottiene +2 CA.'
+    - 'Mirare: azzera la tua CA e ottieni Vantaggio a colpire.'
+    - 'Evadere: puoi disingaggiare gratuitamente un nemico.'
+    - 'Difensiva: annulla un colpo in arrivo, rinunciando all’attacco del turno.'
+    - 'Incalzare: se ferisci, ottieni un attacco gratuito contro un nemico a portata.'
+    LETTERA:
+    - Un soldato nemico
+    - Tua moglie gravida
+    - Il tuo ex comandante
+    - Qualcuno che non c’è più
+    - Una monaca di clausura
+    - Una donna accusata di stregoneria
+tabelle:
+  FALLIMENTI:
+  - Acrobata
+  - Birraio
+  - Antiquario
+  - Farmacista
+  - Estetista
+  - Fornaio
+  - Raccattapalle
+  - Barbiere
+  - Chierichetto
+  - Sacrestano
+  - Sterminatore di api
+  - Apicoltore
+  - Mendicante
+  - Fabbricante di cinture
+  - Musicista ambulante
+  - Ingozzatore di papere
+  - Candeliere
+  - Formaggiaio
+  - Raccoglitore di ciliegie
+  - Spazzacamino
+  - Caricatore di orologi
+  - Ciabattino
+  - Pasticciere
+  - Bottaio
+  - Addestratore di maiali
+  - Robivecchi
+  - Coppiere
+  - Venditore di posate
+  - Tagliaborse
+  - Scavafossi
+  - Acchiappatopi
+  - Addestratore di cani
+  - Fabbricante di bambole
+  - Portabrocche
+  - Boia
+  - Sventrapesci
+  - Petomane
+  - Fabbricante di frecce
+  - Fioraio
+  - Volantinatore
+  - Indovino
+  - Clown funebre
+  - Rematore
+  - Giocatore d'azzardo
+  - Guantaio
+  - Pulisci latrine
+  - Scavatombe
+  - Ginnasta
+  - Merciaio
+  - Rasa zoccoli
+  - Cacciatore
+  - Tagliaghiaccio
+  - Giullare
+  - Giocoliere
+  - Buttafuori ecclesiastico
+  - Svegliatore
+  - Raccoglitore di sanguisughe
+  - Guardia personale
+  - Messaggero
+  - Ciarlatano
+  - Coltivatore di funghi
+  - Tata
+  - Organizzatore di orge
+  - Mandriano di struzzi
+  - Raccoglitore di vomito di gufo
+  - Portatore di palanchino
+  - Predicatore
+  - Borsaiolo
+  - Poeta
+  - Ritrattista
+  - Addetto alle polveri da sparo
+  - Raccoglitore di feci di cane
+  - Levatrice
+  - Trafugatore di cadaveri
+  - Riparatore di tetti
+  - Marinaio
+  - Scrivano
+  - Sguattero
+  - Contasemi
+  - Estrattore di veleni
+  - Contrabbandiere
+  - Sofista
+  - Stalliere
+  - Portuale
+  - Tritasassi
+  - Lacchè
+  - Conciatore
+  - Assaggiatore
+  - Tassidermista
+  - Stagnino
+  - Medico dei rospi
+  - Cercatore di rifiuti
+  - Banditore
+  - Palombaro
+  - Usuraio
+  - Portatore d'acqua
+  - Prestanome
+  - Capro espiatorio
+  - Battistrada
+  - Allevatore di vermi
+  NOMI:
+  - Abbastanzio
+  - Abbraccio
+  - Airone
+  - Alberico
+  - Alberto
+  - Albizio
+  - Alsazio
+  - Amodio
+  - Aneto
+  - Anulare
+  - Apopletto
+  - Appassito
+  - Baldo
+  - Balsamo
+  - Belardo
+  - Benedetto
+  - Benigna
+  - Betonio
+  - Bigotto
+  - Bondo
+  - Brigida
+  - Brodo
+  - Burro
+  - Caio
+  - Calandra
+  - Califredo
+  - Callo
+  - Camomilla
+  - Cancro
+  - Cantore
+  - Canzio
+  - Caprina
+  - Carie
+  - Casta
+  - Catarro
+  - Celeste
+  - Chiodo
+  - Cicatrice
+  - Cionco
+  - Clelio
+  - Clistere
+  - Clivio
+  - Clodio
+  - Conocchio
+  - Contenta
+  - Coppa
+  - Cravero
+  - Cupo
+  - Danco
+  - Decapitato
+  - Destro
+  - Distratta
+  - Doglio
+  - Dolente
+  - Duilio
+  - Dullone
+  - Egidio
+  - Elefantino
+  - Eleutero
+  - Elsa
+  - Erberto
+  - Ester
+  - Falcione
+  - Fasullo
+  - Fazio
+  - Fedele
+  - Felce
+  - Filiberto
+  - Flauto
+  - Foglietto
+  - Forgia
+  - Frasca
+  - Fredo
+  - Frenulo
+  - Fritto
+  - Frumenzio
+  - Frutto
+  - Galante
+  - Galvano
+  - Giglio
+  - Gioele
+  - Giovane
+  - Giravolta
+  - Giubilante
+  - Giugulare
+  - Goffredo
+  - Gondolino
+  - Gordo
+  - Gramo
+  - Grassa
+  - Greta
+  - Grippo
+  - Ibisco
+  - Idazio
+  - Igor
+  - Impiccato
+  - Incredulo
+  - Lagna
+  - Larga
+  - Letame
+  - Limone
+  - Lucignolo
+  - Lumone
+  - Maledetta
+  - Materno
+  - Mellifluo
+  - Mirtillo
+  - Mondezza
+  - Moribonda
+  - Murena
+  - Nascosta
+  - Negletto
+  - Nunzio
+  - Occhio
+  - Odrigo
+  - Olio
+  - Orazio
+  - Orrore
+  - Ovallato
+  - Ovario
+  - Paffuto
+  - Palmo
+  - Panno
+  - Pasticcio
+  - Penitente
+  - Pergamena
+  - Periglio
+  - Persiana
+  - Piergiorgio
+  - Pigna
+  - Pio
+  - Polenta
+  - Poltrone
+  - Poncio
+  - Poraccio
+  - Possente
+  - Pozzo
+  - Primizio
+  - Primula
+  - Prurito
+  - Putrida
+  - Quavo
+  - Quintino
+  - Randello
+  - Regina
+  - Renate
+  - Rodrigo
+  - Rospo
+  - Ruscello
+  - Sabato
+  - Saccheggio
+  - Sanguino
+  - Sapone
+  - Sazia
+  - Schietto
+  - Serpe
+  - Sfrenato
+  - Sigillo
+  - Silente
+  - Solitaria
+  - Sonno
+  - Sorca
+  - Sostanza
+  - Spezzata
+  - Spina
+  - Splendente
+  - Stoppino
+  - Talarico
+  - Teodoro
+  - Terra
+  - Tombolo
+  - Tormento
+  - Tornio
+  - Torre
+  - Trauma
+  - Trofea
+  - Troglo
+  - Venerea
+  - Verbena
+  - Verme
+  - Vessata
+  - Vetusta
+  - Vilma
+  - Vinicio
+  - Visigoto
+  - Vitrione
+  - Zelo
+  - Zuffa
+  MIRACOLI:
+  - >-
+    Abominio
+
+    Area: un cerchio tracciato a terra col bastone. Durata: [dadi] turni.
+
+    Dichiara cosa ritieni abominevole. Ad esempio, i maiali, le persone calve o il
+    colore verde. Quella cosa non può entrare nel cerchio.
+  - >-
+    Mente ferma
+
+    Bersaglio: una creatura baciata sulla fronte. Durata: [dadi] turni.
+
+    La creatura ottiene immunità da qualsiasi effetto mentale ostile, provocato da
+    creature di Livello pari o inferiore a [dadi].
+  - >-
+    Imposizione delle mani
+
+    Bersaglio: una creatura su cui imponi le mani. Durata: istantaneo.
+
+    Cura [somma] Ps della creatura. Se investi 4 [dadi] o più, puoi curare una cicatrice
+    o una malattia.
+  - >-
+    Vincolo
+
+    Bersaglio: una creatura a vista. Durata: [dadi] turni.
+
+    La creatura è vincolata e immobile. Può respirare e muovere gli occhi, ma non
+    può nuotare, volare o compiere altre azioni. La creatura può effettuare un tiro
+    salvezza ogni round per liberarsi, con una penalità pari ai [dadi] che hai investito.
+  - >-
+    Pura visione
+
+    Bersaglio: sé stesso. Durata: [dadi] turni.
+
+    Puoi vedere ciò che è invisibile e attraverso le illusioni. Se investi 2+ [dadi]:
+    puoi anche vedere se qualcuno è posseduto o sta mentendo, guardandolo negli occhi.
+  - >-
+    Mensa del Signore
+
+    Bersaglio: delle pietre al tocco. Durata: permanente.
+
+    Crei abbastanza cibo per nutrire [dadi] persone per un pasto, ed acqua limpida
+    per dissetarle. Tazze, utensili e condimenti non vengono forniti.
+  - >-
+    Bastone di Aronne
+
+    Bersaglio: un ramo secco. Durata: permanente.
+
+    Il ramo diventa un serpente. Ha 1-su-6 di essere velenoso (+1 per ogni [dado]
+    investito oltre il primo, veleno mortale). Tira sotto [somma] per controllarlo.
+  - >-
+    Rammendo
+
+    Bersaglio: un oggetto rotto o consumato, al tocco. Durata: istantanea.
+
+    Ripara l’oggetto o ne ripristina la funzione originale. Non funziona sulle armi,
+    sugli oggetti sacri o su quelli magici.
+  - >-
+    Primavera
+
+    Bersaglio: [somma] piante, al tocco. Durata: istantanea.
+
+    La vita vegetale cresce fino a [dadi]+1 volte la sua dimensione. Se [dadi] è maggiore
+    di 2, puoi fargli assumere una forma specifica e fargli afferrare oggetti e creature.
+  - >-
+    Aprire le acque
+
+    Bersaglio: [dadi] d’acqua, a vista. Durata: [somma] turni.
+
+    Ogni [dado] investito permette di cambiare forma o prosciugare: 1. un secchio
+    d’acqua, 2. un pozzo, 3. un fiume, 4. un lago, 5. la pioggia, 6. il mare.
+  MOTIVAZIONI_PER_CAMPARE:
+  - 'Amore totale: guidato dall''amore incondizionato per ogni cosa.'
+  - 'Ambizione patologica: ossessionato dal miglioramento personale.'
+  - 'Egocentrico: devi essere sempre al centro dell''attenzione.'
+  - 'Il prescelto: devi realizzare una profezia.'
+  - 'Sei stato gentile con me: sei fedele ad un altro Pg per un singolo gesto gentile.'
+  - 'Eroe cronico: sei costretto ad aiutare tutti, sempre.'
+  - 'Maniaco del controllo: su te stesso, sulle altre persone e sul tuo ambiente.'
+  - 'Desiderio darwinista: vuoi riprodurti con il miglior partner possibile.'
+  - 'Disperata ricerca di uno scopo: in viaggio per trovare un posto nel mondo.'
+  - 'Disperato bisogno d’affetto: puoi fare di tutto per ottenerlo.'
+  - 'Disperato bisogno di ordini: manchi completamente di iniziativa.'
+  - 'Nichilista: vuoi vedere bruciare il mondo.'
+  - 'Incarnazione del vizio: sei guidato da una qualità negativa.'
+  - 'Incarnazione della virtù: sei guidato da una virtù morale.'
+  - 'Molti nemici, molto onore: le angherie ti motivano a fare grandi cose.'
+  - 'Cavaliere caduto: non hai protetto qualcuno e non vuoi più fallire.'
+  - 'Onore di famiglia: vuoi essere all''altezza del tuo cognome.'
+  - 'Snack gratis: faresti qualsiasi cosa per ottenere del cibo a scrocco.'
+  - 'Per la scienza: desideri fare nuove scoperte scientifiche.'
+  - 'Per il lol: ami gli scherzi, anche se vanno contro il tuo interesse.'
+  - 'La solita scusa freudiana: il passato ti smuove, di solito è colpa dei genitori.'
+  - 'Malato immaginario: stai sempre male, per un motivo o per l''altro.'
+  - 'Cercatore di gloria: vuoi che gli altri ti considerino un duro.'
+  - 'Gotta catch ‘em all: vuoi terminare la tua collezione.'
+  - 'Oro: sei ossessionato da una particolare forma di ricchezza.'
+  - 'Malato cronico: hai un disperato bisogno di soldi per pagarti le cure mediche.'
+  - 'L''edonista: vuoi provare ogni tipo di piacere, anche a spese degli altri.'
+  - 'Casa dolce casa: stai solo cercando di sistemare le cose prima di tornare a casa.'
+  - 'Voglio solo essere libero: vuoi la libertà da qualche tipo di schiavitù.'
+  - 'Voglio solo essere normale: vuoi solo vivere una vita senza eccitazione.'
+  - 'L’adrenalina: cerchi costantemente eccitazione e pericolo.'
+  - 'Tutto è perduto: desideri che la società venga distrutta o abbandonata.'
+  - 'Voglio essere un vero uomo: vuoi dimostrare la tua umanità.'
+  - 'Ti troverò: vuoi ritrovare una persona cara perduta o rapita.'
+  - 'Vivere un sogno d''infanzia: ora che sei un adulto te lo puoi permettere.'
+  - 'Il mio padrone: fai ciò che deve essere fatto a beneficio del tuo padrone.'
+  - 'Amante della natura: sei guidato da una profonda affinità per la natura.'
+  - 'Proposito per il nuovo anno: un nuovo inizio ti ha spinto ad agire.'
+  - 'Bullo sotto pressione: fai il prepotente a causa della pressione sociale.'
+  - 'Contro il cielo: vuoi che gli dèi paghino per quello che hanno fatto.'
+  - 'V per vendetta: vuoi che qualcuno paghi per ciò che ha fatto.'
+  - 'Fanculo il destino: vuoi andare contro una profezia.'
+  - 'La resurrezione di un altro: cerchi di resuscitare qualcuno.'
+  - 'Mi chiamavano pazzo: sei motivato dalle offese che hai ricevuto in passato.'
+  - 'Sogno tragico: desideri qualcosa che non potrai mai avere.'
+  - 'Troll: ti diverti a provocare gli altri.'
+  - 'Ben fatto figliolo: desideri l''approvazione di un genitore o di un modello.'
+  - 'Ben fatto papà: desideri l''approvazione dei tuoi figli o seguaci.'
+  - 'Frankenstein: vuoi riparare o migliorare il tuo corpo.'
+  - 'Maledizione: qualcuno ti ha maledetto e ora sei costretto a fare quello che fai.'
+  - 'Debito: devi restituire una cifra impressionante a qualcuno.'
+  - 'Estremista: credi in un ideale e sei disposto a tutto per raggiungerlo.'
+  - 'Rabbia incontenibile: qualcosa ti fa incazzare e ti tiene in vita.'
+  - 'Voglio essere ricordato: cerchi la fama oltre la morte.'
+  - 'Ho qualcosa da dire: cerchi l’ispirazione per riuscire finalmente ad esprimerti.'
+  - 'Patria o morte: non c’è nulla di più importante del luogo da cui provieni.'
+  - 'La vocina nella testa: qualcuno o qualcosa ti sussurra cosa fare.'
+  - 'Mamma orsa: vuoi solo prenderti cura di questi poveri gaglioffi.'
+  - 'Il Papa: la sua parola è legge.'
+  - 'Il Diavolo: la sua parola è caos.'
+  PAROLE_OCCULTE_AZIONI:
+  - Sfiorire
+  - Trasformare A in B (Tira 2 parole oggetto)
+  - Ingabbiare
+  - Ammaliare
+  - Parlare con
+  - Gonfiare
+  - Evocare
+  - Comandare
+  - Maledire
+  - Moltiplicare
+  - Scovare
+  - Sciogliere
+  - Bruciare
+  - Vomitare
+  - Masticare
+  - Sterminare
+  - Eclissare
+  - Separare
+  - Risucchiare
+  - Sognare
+  PAROLE_OCCULTE_OGGETTI:
+  - Sé stessa
+  - Latte
+  - Sangue
+  - Gioia
+  - Sassi
+  - Feti
+  - Carne
+  - Ferro
+  - Luce
+  - Sacro
+  - Cadaveri
+  - Lacrime
+  - Serpenti
+  - Veleno
+  - Ossa
+  - Gatti
+  - Chiavi
+  - Denti
+  - Desiderio
+  - Incubi

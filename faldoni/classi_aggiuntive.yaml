@@ -17,6 +17,7 @@ classi:
     ingombro: 0
   - tipo: "oggetto"
     nome: Libro degli incantesimi
+    ingombro: 0
   avanzamenti:
   - 'Magia: apprendi un nuovo incantesimo, come al solito. Che noia.'
   - 'Bugia del mago: puoi dire una bugia al giorno ed essere creduto automaticamente
@@ -343,7 +344,7 @@ classi:
   - Invernomuto
   descrizione: Non avrei mai dovuto cucinare quel cinghiale dagli occhi rossi!
   averi: un ricettario con una Pietanza Prelibata scritta, una padella in ferro dallo
-    strano fondo di colore giallo e tre Mutazioni Animali al giorno (tira tre animali).
+    strano fondo di colore giallo e tre Mutazioni Animali al giorno.
   bonus:
   - tipo: "salute"
     quantita: 3
@@ -351,6 +352,7 @@ classi:
     statistica: forza
   - tipo: "oggetto"
     nome: Ricettario
+    ingombro: 0
   - tipo: "oggetto"
     nome: Padella in ferro dallo strano fondo di colore giallo
   avanzamenti:
@@ -450,8 +452,10 @@ classi:
     statistica: carisma
   - tipo: "oggetto"
     nome: Libro pieno di schemi astrali e orbite
+    ingombro: 0
   - tipo: "oggetto"
     nome: Calendario dei prossimi 10 anni
+    ingombro: 0
   avanzamenti:
   - 'Miglioria: +1 ad una Statistica a scelta.'
   - 'Tema Natale: facendo domande inopportune a una persona per oltre 4 ore, sei in
@@ -569,7 +573,6 @@ classi:
     ingombro: 0
   - tipo: "oggetto"
     nome: Un tomo voluminoso
-    ingombro: 2
   avanzamenti:
   - 'Una pergamena: Aggiungi un nuovo Argomento al tuo tomo.'
   - 'Nom de plume: Hai un secondo nome sotto cui hai pubblicato alcuni testi diversi
